@@ -9,7 +9,7 @@ permissions:
   id-token: write
 jobs:
   publish:
-    uses: aetherpak/actions/.github/workflows/publish.yml@v1
+    uses: aetherpak/actions/.github/workflows/publish.yml@main
     with:
       manifest-path: org.gnome.Sudoku.json
       runtime: gnome-50
