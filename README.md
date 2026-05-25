@@ -51,8 +51,10 @@ flatpak install --user actions-demo org.gnome.Sudoku
 
 1. Add a manifest and a `publish.yml` like the one above.
 2. Settings → Pages → Source: **GitHub Actions**.
-3. (Optional) Add a `AETHERPAK_GPG_KEY` secret to enable signing.
-4. Push to `main`; after the first run, set the GHCR package to public.
+3. For an org, allow public packages first: **Organization → Settings → Packages
+   → Package creation → Public**.
+4. (Optional) Add a `AETHERPAK_GPG_KEY` secret to enable signing.
+5. Push to `main`; after the first run, set the GHCR package to public.
 
 See the [AetherPak Actions README](https://github.com/aetherpak/actions) for the
 full option list.
