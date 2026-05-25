@@ -1,0 +1,19 @@
+name: Publish Flatpak
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+  packages: write
+  pages: write
+  id-token: write
+jobs:
+  publish:
+    uses: aetherpak/actions/.github/workflows/publish.yml@v1
+    with:
+      manifest-path: org.gnome.Sudoku.json
+      runtime: gnome-50
+      branch: stable
+      run-linter: false
+    secrets:
+      gpg-private-key: ${{ secrets.AETHERPAK_GPG_KEY }}
