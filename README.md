@@ -18,7 +18,6 @@ jobs:
     uses: aetherpak/actions/.github/workflows/publish.yml@v1
     with:
       manifest-path: org.gnome.Sudoku.json
-      runtime: gnome-50
       branch: stable
       run-linter: false
     secrets:
